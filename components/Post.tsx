@@ -56,7 +56,7 @@ export default async function Post(
       </div>
 
       <button className="mt-2">
-      {category&&<Link key={id} className="mt-2 px-3 py-1 rounded-md bg-slate-900 text-white" href={`/categories/${category}`}>
+      {category&&<Link className="mt-2 px-3 py-1 rounded-md bg-slate-900 text-white" href={`/categories/${category}`}>
             {category}
         </Link>}
       </button>
@@ -73,7 +73,7 @@ export default async function Post(
         <span><Image className=" m-2" src={'/link.svg'} alt={"link-logo"} height={20} width={20}/></span>
         {links && (
         <div className="overflow-hidden mx-4 ">
-          {links.map((link)=>(<div><Link key={id} href={link}>{link}</Link></div>))}
+          {links.map((link,i)=>(<div><Link key={i} href={link}>{link}</Link></div>))}
         </div>
         )}
 
@@ -84,7 +84,7 @@ export default async function Post(
       {
         isEditable && (
           <div className="flex gap-4" >
-            <Link  key={id}className="  text-dark bg-slate-50" href={`edit-post/${id}`}>Edit</Link>
+            <Link className="  text-dark bg-slate-50" href={`edit-post/${id}`}>Edit</Link>
             <DeleteButton id={id} />
           </div>
         )
