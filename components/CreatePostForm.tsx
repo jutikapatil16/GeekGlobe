@@ -1,6 +1,6 @@
 'use client'
 
-import { categoriesData } from "@/data";
+// import { categoriesData } from "@/data";
 import CategoriesList from "./CategoriesList";
 import Link from "next/link";
 import { useEffect, useState } from "react";
