@@ -26,7 +26,7 @@ export default  async function CategoriesList() {
   return (
     <div className="gap-2 flex flex-auto">
         {categories && categories.map((category:TCategory)=>
-        <Link className="m-2 px-3 py-1 rounded-md bg-slate-900 text-white" href={`/categories/${category.catName}`}>
+        <Link key={category.id} className="m-2 px-3 py-1 rounded-md bg-slate-900 text-white" href={`/categories/${category.catName}`}>
             {category.catName}
         </Link>
         )}
