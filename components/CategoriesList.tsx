@@ -1,5 +1,5 @@
 import { TCategory } from "@/app/types";
-import {categoriesData} from "@/data";
+// import {categoriesData} from "@/data";
 import Link from "next/link";
 
 const getCategories = async() : Promise<TCategory[] | null> =>{
