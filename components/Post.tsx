@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import DeleteButton from "@/components/DeleteButton";
 import { getServerSession } from "next-auth/next";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+// import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/app/utils/authOptions";
 
 
 interface PostProps {
@@ -44,7 +45,7 @@ export default async function Post(
   return (
     <div className="mt-4 ">
       <div className="my-2">
-        posted by: <span className="font-bold">{authorname}</span> on {fdate}
+        posted by: <span className="font-bold">{author}</span> on {fdate}
       </div> 
 
       <div className="">

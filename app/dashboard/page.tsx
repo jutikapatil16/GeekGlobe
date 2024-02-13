@@ -4,7 +4,8 @@ import Link from 'next/link'
 import { TPost } from '../types';
 import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
-import { authOptions } from '../api/auth/[...nextauth]/route';
+// import { authOptions } from '../api/auth/[...nextauth]/route';
+import { authOptions } from '../utils/authOptions';
 
 //get but with email coz only specific to that user
 const getPosts = async(email:string) =>{
