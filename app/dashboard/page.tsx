@@ -1,5 +1,5 @@
 import Post from '@/components/Post'
-import { postsData } from '@/data'
+// import { postsData } from '@/data'
 import Link from 'next/link'
 import { TPost } from '../types';
 import { getServerSession } from 'next-auth';
