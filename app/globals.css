@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+ @apply bg-slate-300 rounded px-4 py-2 shadow hover:bg-slate-900 hover:text-white font-semibold;
+}
+h1{
+    @apply text-2xl font-bold;
+}
