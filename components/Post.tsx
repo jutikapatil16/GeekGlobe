@@ -73,7 +73,7 @@ export default async function Post(
         <span><Image className=" m-2" src={'/link.svg'} alt={"link-logo"} height={20} width={20}/></span>
         {links && (
         <div className="overflow-hidden mx-4 ">
-          {links.map((link)=>(<div><Link href={link}>{link}</Link></div>))}
+          {links.map((link)=>(<div><Link key={id} href={link}>{link}</Link></div>))}
         </div>
         )}
 
