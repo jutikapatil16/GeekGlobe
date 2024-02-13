@@ -56,7 +56,7 @@ export default async function Post(
       </div>
 
       <button className="mt-2">
-      {category&&<Link className="mt-2 px-3 py-1 rounded-md bg-slate-900 text-white" href={`/categories/${category}`}>
+      {category&&<Link key={id} className="mt-2 px-3 py-1 rounded-md bg-slate-900 text-white" href={`/categories/${category}`}>
             {category}
         </Link>}
       </button>
